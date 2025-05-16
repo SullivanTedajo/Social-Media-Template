@@ -1,0 +1,34 @@
+@forward '../../globals';
+@forward '../../util';
+
+.notification{
+    position: relative;
+    @extend %section;
+    margin-bottom: 1em;
+    background-color: var(--tertiary-color);
+
+    &__title{
+        font: {
+            size: 1.1em;
+        }
+    }
+
+    &__close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: .65em;
+        cursor: pointer;
+        background-color: var(--secondary-color);
+        &:hover{
+            background-color: var(--gray-color);
+            color: var(--black-color);
+        }
+
+    }
+
+    &__icon{
+        color: var(--white-color);
+        font-size: 1.2em;
+    }
+}

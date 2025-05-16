@@ -1,0 +1,35 @@
+@forward '../../globals';
+@forward '../../util';
+
+.interest{
+    @extend %section;
+    margin-bottom: 1em;
+
+    &__title{
+        font: {
+            size: 1em;
+            weight: 200;
+        }
+    }
+
+    &__items{
+        list-style-type: none;
+        padding: 0;
+        display: inline-block;
+        gap: .3em;
+    }
+
+    &__item-1{
+        @extend %interest-item;
+        background-color: var(--primary-color);
+    }
+    &__item-2{
+        @extend %interest-item;
+        background-color: var(--secondary-color);
+    }
+    &__item-3{
+        @extend %interest-item;
+        background-color: var(--tertiary-color);
+        color: var(--black-color);
+    }
+}

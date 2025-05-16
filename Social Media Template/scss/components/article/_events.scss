@@ -1,0 +1,55 @@
+@forward '../../globals';
+@forward '../../util';
+
+.events{
+   @extend %section;
+   margin-bottom: 1em;
+   text: {
+        align: center;
+        transform: capitalize;
+    }
+   
+   &__title{
+        font: {
+            size: 1em;
+            weight: 400;
+        }
+    
+   }
+
+   &__image{
+    width: auto;
+    margin-bottom: 1em;
+   }
+
+   &__category{
+    font-weight: 600;
+   }
+
+   &__info{
+    text: {
+        decoration: none;
+        transform: capitalize;
+    }
+    font-size: 1em;
+    color: var(--black-color);
+    background-color: var(--tertiary-color);
+    padding: .5em;
+    display: block;
+    &:hover{
+        background-color: var(--gray-color);
+    }
+   }
+}
+
+// Mobile Version 
+@media only screen and (max-width:37.5em) {
+    .events{
+        &__image{
+            height: 15em;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+}

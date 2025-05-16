@@ -1,0 +1,35 @@
+@forward '../../globals';
+@forward '../../util';
+
+
+.group{
+    @extend %section;
+    padding: 0;
+    margin-bottom: 1em;
+    border-radius: 0;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+
+
+    &__items{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+       
+    }
+
+    &__item{
+        padding: .6em 1em;
+        text: {
+            transform: capitalize;
+        }
+        &:hover{
+            background-color: var(--gray-color);
+            color: var(--black-color);
+        }
+    }
+
+    &__icon{
+        padding-right: 1.2em;
+    }
+}

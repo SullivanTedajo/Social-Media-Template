@@ -1,0 +1,14 @@
+@forward '../../globals';
+@forward '../../util';
+
+.robot{
+    @extend %section;
+    margin-bottom: 1em;
+    padding-block: 2em;
+    display: flex;
+    place-content: center;
+
+    &__icon{
+        font-size: 1.5em;
+    }
+}

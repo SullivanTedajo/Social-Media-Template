@@ -1,0 +1,52 @@
+@forward '../../globals';
+@forward '../../util';
+
+.requests{
+    @extend %section;
+    margin-bottom: 1em;
+    text-align: center;
+
+    &__title{
+        font: {
+            size: 1em;
+            weight: 400;
+        }
+    }
+
+    &__image{
+        width: auto;
+        margin-inline: auto;
+    }
+
+    &__name{
+        font: {
+            size: 1em;
+            weight: 400;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+    }
+
+    &__accept-button{
+        @extend %request-button;
+        background-color: var(--green-color);
+
+    }
+
+    &__deny-button{
+        @extend %request-button;
+        background-color: var(--red-color);
+    }
+}
+
+// Mobile Version 
+@media only screen and (max-width:37.5em) {
+    .requests{
+        &__buttons{
+            display: block;
+        }
+        
+    }
+}

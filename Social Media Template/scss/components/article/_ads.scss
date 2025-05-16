@@ -1,0 +1,15 @@
+@forward '../../globals';
+@forward '../../util';
+
+.ads{
+    @extend %section;
+    padding-block: 2em;
+    display: flex;
+    place-content: center;
+    margin-bottom: 1em;
+
+
+    &__description{
+        margin: 0;
+    }
+}

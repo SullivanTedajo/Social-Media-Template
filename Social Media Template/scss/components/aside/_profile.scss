@@ -1,0 +1,43 @@
+@forward '../../globals';
+@forward '../../util';
+
+.profile{
+    @extend %section;
+    margin-bottom: 1em;
+
+    &__title{
+        text: {
+            align: center;
+            transform: capitalize;
+        }
+        font: {
+            weight: 200;
+            size: 1.3em;
+        }
+        
+    }
+
+    &__image{
+        border-radius: 50%;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    &__separator{
+        @extend %separator;
+    }
+
+    &__items{
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &__item{
+        margin-bottom: 1em;
+    }
+
+    &__icon{
+        padding-right: 1.2em;
+        color: var(--secondary-color);
+    }
+}

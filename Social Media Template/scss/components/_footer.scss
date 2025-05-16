@@ -1,0 +1,16 @@
+@forward '../globals';
+
+.footer{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1em;
+
+    &__description{
+        margin: 0;
+    }
+
+    &__link{
+        color: var(--white-color);
+    }
+
+}

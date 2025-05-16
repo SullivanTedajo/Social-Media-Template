@@ -1,0 +1,36 @@
+@forward '../../globals';
+@forward '../../util';
+
+.new-post{
+    @extend %section;
+    margin-bottom: 1em;
+
+    &__title{
+        font: {
+            size: 1em;
+            weight: 300;
+        }
+        opacity: .7;
+    }
+
+    &__form-control{
+        padding: 1.2em;
+        border: .1em solid #00000022;
+        width: 100%;
+        cursor: text;
+        &::placeholder{
+            font: {
+                size: 1.4em;
+            } 
+            color: var(--black-color);
+        }
+        margin-bottom: 1em;
+    }
+
+    &__form-submit{
+      @extend %button;
+    }
+    &__icon{
+        padding-right: .3em;
+    }
+}
